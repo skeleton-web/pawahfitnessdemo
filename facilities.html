@@ -1,0 +1,193 @@
+<!--facilities-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PAWAH-Fitness|Spa</title>
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    <!-- Compiled and minified CSS -->
+  </head>
+
+  <body>
+
+    <video class="responsive-video" controls>
+      <source src="movie.mp4" type="video/mp4">
+    </video>
+    <!nav bar-->
+    <div class="navbar-fixed">
+      <nav class="nav-bar-items">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <img src="img/gym.png" alt="logo"
+          /></a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-demo"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li class="active red accent-4"><a href="index.html">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="index.html">facilities</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">fitness club</a></li>
+            <li><a href="#">membership</a></li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <!--mobile_nav-->
+    <div>
+      <ul class="sidenav" id="mobile-demo" class="">
+        <li class="active  red accent-4"><a href="#"> HOME</a></li>
+        <li class="divider"></li>
+        <li><a href="#">facilities</a></li>
+        <li class="divider"></li>
+        <li><a href="#">membership</a></li>
+        <li class="divider"></li>
+        <li><a href="#">about</a></li>
+        <li class="divider"></li>
+        <li><a href="facilities.html">facilities</a></li>
+        <li class="divider"></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <br>
+    <br>
+<section class="grey darken-4">
+  <div class="center-align card-panel black">
+    <h3 class="white-text">STATE OF THE ART FACILITIES</h3>
+    <p class="white-text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla velit
+      ipsum minima voluptatum atque pariatur iusto debitis reiciendis temporibus
+      iure. Alias dolore illum impedit minima voluptate cumque adipisci officia
+      facilis.
+    </p>
+  </div>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="img/sport-fitness-workout-gym-crossfit-exercise-equipment-1434675-pxhere.com.jpg"
+            class="responsive-img"
+          />
+          <span class="card-title"></span>
+        </div>
+        <div class="card-content red darken-4">
+          <p>skipping rope</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn btn-large red">READ MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="img/sea-people-recreation-underwater-swimming-pool-swimming-1099915-pxhere.com.jpg"
+            class="responsive-img"
+          />
+          <span class="card-title">swimming pool </span>
+        </div>
+        <div class="card-content red darken-4">
+          <p>swimming pool</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn btn-large red">READ MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="img/plant-white-flower-petal-red-relax-869834-pxhere.com.jpg"
+            class="responsive-img"
+          />
+          <span class="card-title">skipping rope</span>
+        </div>
+        <div class="card-content red darken-4">
+          <p>skipping rope</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn btn-large red">READ MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="img/hand-girl-leg-red-pink-arm-660599-pxhere.com.jpg"
+            class="responsive-img"
+          />
+          <span class="card-title">skipping rope</span>
+        </div>
+        <div class="card-content red darken-4">
+          <p>skipping rope</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn btn-large red">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/pawah.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".sidenav").sidenav();
+    $(".parallax").parallax();
+  });
+</script>
+
+<script>
+  const slider = document.querySelector(".slider");
+  M.Slider.init(slider, {
+    indicators: false,
+    height: 700,
+    transition: 600,
+    interval: 6500,
+  });
+</script>
+
+<script>
+   $(document).ready(function(){
+$('.parallax').parallax();
+});
+</script>
+</body>
+</html>
